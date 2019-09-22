@@ -1,0 +1,101 @@
+﻿NUM,ID,Age,Sex,American,Genre 1,Genre 2,Favorite
+1,20189511,53,1,2,5,13,"Luchshe, chem lyudi"
+2,20148155,59,2,1,15,19,BH90210
+3,20166510,61,2,1,17,25,It's Always Sunny in Philadelphia
+4,20120669,28,2,1,22,14,The Terror
+5,20167183,26,2,2,15,8,Big Little Lies
+6,20152449,20,1,1,4,20,Friends
+7,20114313,46,2,1,19,19,Brassic
+8,20186446,28,2,2,3,13,Agents of S.H.I.E.L.D.
+9,20158403,60,2,2,25,17,Deep Water
+10,20123260,57,2,2,12,3,House M.D.
+11,20140263,59,2,2,9,24,The Expanse
+12,20149697,37,1,1,2,11,Fear the Walking Dead
+13,20190512,46,2,1,20,11,True Detective
+14,20146804,45,2,2,19,9,The Blacklist
+15,20110020,28,2,2,14,5,Westworld
+16,20164918,42,2,2,24,20,Wu Assassins
+17,20106085,16,1,1,11,3,The Mandalorian
+18,20104516,17,1,1,8,13,Black Mirror
+19,20197146,45,2,1,18,6,Friends
+20,20141281,23,1,2,2,15,Yellowstone
+21,20177083,20,2,1,15,5,Succession
+22,20115699,48,2,1,5,17,Suits
+23,20184741,36,1,2,15,7,Chernobyl
+24,20181505,52,2,2,22,8,The Office
+25,20163521,35,1,1,16,20,Breaking Bad
+26,20175874,44,1,1,8,11,Veronica Mars
+27,20133997,47,2,1,24,3,Lucifer
+28,20168714,49,1,2,16,19,Another Life
+29,20143563,45,1,1,7,22,Dark
+30,20120471,18,2,1,20,23,The Walking Dead
+31,20120363,29,2,1,17,15,Animal Kingdom
+32,20153824,55,1,2,4,3,Supernatural
+33,20129497,50,2,1,2,20,American Horror Story
+34,20109397,16,1,1,19,5,Outlander
+35,20113334,47,1,2,1,20,"Luchshe, chem lyudi"
+36,20164801,42,2,1,9,3,BH90210
+37,20119064,51,1,1,10,1,Vikings
+38,20127595,51,2,2,23,11,The Sinner
+39,20153283,45,1,2,16,19,The Big Bang Theory
+40,20144830,31,2,2,18,14,Grey's Anatomy
+41,20141039,18,1,1,26,4,The Terror
+42,20105290,37,2,1,11,14,Big Little Lies
+43,20128653,20,2,2,12,12,The Morning Show
+44,20167996,62,2,2,12,1,Descendants 3
+45,20143616,28,2,1,2,9,Brooklyn Nine-Nine
+46,20146435,52,1,2,21,5,Glee
+47,20122767,51,2,1,6,21,"Beverly Hills, 90210"
+48,20159677,43,2,2,2,25,Criminal Minds
+49,20183366,16,1,2,8,23,Jane the Virgin
+50,20121880,58,1,1,22,9,The Marvelous Mrs. Maisel
+51,20176261,54,2,2,2,15,Why Women Kill
+52,20190575,39,1,2,18,20,Downton Abbey
+53,20114325,29,2,1,22,22,Preacher
+54,20112155,41,2,2,10,16,Law & Order: Special Victims Unit
+55,20179241,33,1,1,13,8,Titans
+56,20196095,30,2,2,15,6,Brassic
+57,20165404,56,2,2,20,25,Agents of S.H.I.E.L.D.
+58,20100953,30,1,2,16,4,Deep Water
+59,20183027,28,2,2,7,1,The Crown
+60,20129679,49,2,1,23,10,Jack Ryan
+61,20166992,49,2,2,20,20,City on a Hill
+62,20196130,16,1,2,15,24,Designated Survivor
+63,20159045,22,1,1,10,21,Elementary
+64,20172852,50,2,2,1,24,NCIS: Naval Criminal Investigative Service
+65,20104291,41,2,2,5,23,Fear the Walking Dead
+66,20138784,48,1,1,3,2,True Detective
+67,20105677,62,2,2,7,22,The Blacklist
+68,20117586,45,1,1,2,16,Westworld
+69,20102594,59,2,2,13,25,Invader ZIM: Enter the Florpus
+70,20192977,42,1,1,19,16,Arrow
+71,20102547,24,2,1,18,25,Riverdale
+72,20125892,18,2,2,21,13,Better Call Saul
+73,20129602,38,1,2,16,13,Shameless
+74,20147946,57,2,2,25,20,Carnival Row
+75,20148395,31,1,2,11,20,Mad Men
+76,20178460,38,1,1,5,1,Power
+77,20144139,54,1,2,23,22,The Sopranos
+78,20106872,60,2,1,4,16,Pennyworth
+79,20178532,57,2,2,9,11,Instinct
+80,20149923,34,2,1,25,1,How I Met Your Mother
+81,20130868,35,1,2,10,4,Doctor Who
+82,20128676,17,2,1,12,24,The Naked Director
+83,20110658,56,2,1,2,26,It's Always Sunny in Philadelphia
+84,20165356,23,1,2,12,17,Good Omens
+85,20111258,39,2,1,13,5,iZombie
+86,20100210,42,2,1,15,2,The Flash
+87,20192649,33,1,2,22,13,On Becoming a God in Central Florida
+88,20141649,22,1,2,17,24,Schitt's Creek
+89,20193667,27,1,1,1,10,Grand Hotel
+90,20161222,44,1,2,7,17,Parks and Recreation
+91,20102551,34,1,2,21,21,The Witcher
+92,20125114,37,1,2,10,13,Fargo
+93,20155379,33,1,2,18,7,The Loudest Voice
+94,20194922,62,1,2,26,25,Gotham
+95,20195897,28,1,1,17,22,Midsomer Murders
+96,20177672,51,1,1,19,19,Legion
+97,20118910,45,2,2,11,15,House M.D.
+98,20148373,57,2,2,13,16,The Expanse
+99,20164015,33,2,2,20,25,Ozark
+100,20128947,54,1,1,18,11,Homeland
