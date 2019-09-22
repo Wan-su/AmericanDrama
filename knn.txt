@@ -1,0 +1,92 @@
+install.packages("factoextra")
+install.packages("NbClust")
+
+library(factoextra)
+library(NbClust)
+library(reshape2)
+
+
+train<-read.csv("train.csv")
+test<-read.csv("test.csv")
+rownames(train)<-train[,1]
+train<-train[,-1]
+rownames(test)<-test[,1]
+test<-test[,-1]
+
+
+
+df<- scale(train)
+
+#set.seed(123)
+#fviz_nbclust(df, kmeans, nstart = 25,  method = "gap_stat", nboot = 50) + labs(subtitle = "Gap statistic method")
+
+
+fviz_nbclust(df, kmeans, method = "silhouette")+labs(subtitle = "Silhouette method")
+
+gnumb<-10
+
+group<- kmeans(df,gnumb,nstart = 10)
+mygroup<- data.frame(train, group$cluster)
+
+
+times<-Sys.time()
+for(hh in 1:nrow(test)){
+    print(hh);
+    sum_dist<- matrix(0,gnumb,1)
+    sum_dist
+    
+    for(i in 1:gnumb){
+        each_group<- subset(mygroup, group.cluster==i)
+        sum_dist_group<- c(0)
+        user_in_grp<- c(0)
+        for(j in 1:nrow(each_group)){
+            newuser<- matrix(0,2,6)
+            
+            newuser[1,]<- as.matrix(each_group[j,1:6])
+            
+            newuser[2,]<- as.matrix(test[hh,])
+            
+            dist_newu_grp<- as.matrix(dist(newuser, method = "euclidean"))
+            sum_dist_group<- sum_dist_group + dist_newu_grp[2,1]
+            user_in_grp<- user_in_grp + 1	
+        }
+        
+        sum_dist[i,]<- sum_dist_group/user_in_grp
+    }
+    sum_dist
+    
+    c.sum<- c(sum_dist) 
+    names<- c(1:gnumb)
+    group_near<- data.frame("Group_id"=c(names), "distance"=c(c.sum))
+    group_near<- group_near[order(group_near$distance),, drop=FALSE]
+    group_near
+    group_newuser<- group_near[1,1] 
+    group_newuser
+    
+    each_group<- subset(mygroup, group.cluster==group_newuser)
+    each_group
+    
+    group_matrix<- matrix(rownames(each_group)) 
+    group_matrix 
+    
+    ratings<-read.csv("USER.csv")
+    
+    ratings<- as.matrix(ratings)
+    
+    
+    
+    newusergroup_matrix<- matrix(ncol = 2, nrow = nrow(group_matrix))
+   
+    for(i in 1:nrow(group_matrix))
+        for (j in 1:nrow(ratings)){
+            if (as.numeric(group_matrix[i,1])==as.numeric(ratings[j,1])){
+                newusergroup_matrix[i,1] <- ratings[j,2]
+                newusergroup_matrix[i,2] <- ratings[j,8]
+            }
+        }
+    newusergroup_matrix
+    write.csv(newusergroup_matrix,paste0("knnkkk",hh,".csv"))
+}
+
+times
+Sys.time()
